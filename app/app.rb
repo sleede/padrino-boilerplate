@@ -52,7 +52,7 @@ class PadrinoBoilerplate < Padrino::Application
 
   configure :production do
     # For padrino assets
-    set :css_compressor => Mincss
+    set :css_compressor => CssCompressor.new
     set :js_compressor => Uglifier.new
   end
 
