@@ -19,13 +19,14 @@
 
   <%= stylesheet_link_tag 'application' %>
   <%= stylesheet_link_tag 'print', :media => 'print' %>
+  <%= yield_content :stylesheet %>
 
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
   <![endif]-->
   <%= javascript_include_tag 'modernizr' %>
 </head>
-<body>
+<body class="<%= current_action %>">
 
   <div id="main" class="container">
     <%= yield %>
@@ -33,5 +34,6 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <%= javascript_include_tag 'application' %>
+  <%= yield_content :javascript %>
 </body>
 </html>
