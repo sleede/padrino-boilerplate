@@ -6,6 +6,9 @@ class Admin < Padrino::Application
   register Padrino::Admin::AccessControl
   register Padrino::Assets
 
+  register Padrino::Cache
+  enable :caching
+
   ##
   # Application configuration options
   #
