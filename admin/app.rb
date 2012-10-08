@@ -25,6 +25,12 @@ class Admin < Padrino::Application
   # layout  :my_layout              # Layout can be in views/layouts/foo.ext or views/foo.ext (default :application)
   #
 
+  configure :production do
+    # For padrino assets
+    set :css_compressor => CssCompressor.new
+    set :js_compressor => Uglifier.new
+  end
+
   set :admin_model, 'Account'
   set :login_page, "/admin/sessions/new"
 
