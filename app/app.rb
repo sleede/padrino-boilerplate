@@ -48,12 +48,18 @@ class PadrinoBoilerplate < Padrino::Application
   #
   configure :development do
     disable :caching
+    set :delivery_method, :test
   end
 
   configure :production do
     # For padrino assets
     set :css_compressor => CssCompressor.new
     set :js_compressor => Uglifier.new
+    use Rack::GoogleAnalytics, :tracker => 'UA-91172-8'
+  end
+
+  def self.email_to
+    'contact@sleede.com'
   end
 
   ##

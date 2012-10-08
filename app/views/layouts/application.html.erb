@@ -7,13 +7,13 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta charset="UTF-8" />
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
-  <meta name= "format-detection" content = "telephone=no">
+  <title><%= @page_title || '' %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="index, follow">
-  <meta name="keywords" content="">
-  <meta name="title" content="">
-  <meta name="description" content="">
+  <meta name="keywords" content="<%= @meta_keywords || '' %>">
+  <meta name="title" content="<%= @page_title || '' %>">
+  <meta name="description" content="<%= @meta_description || '' %>">
 
   <link href="/favicon.ico" rel="icon" type="image/ico" />
 

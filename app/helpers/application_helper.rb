@@ -5,4 +5,8 @@ PadrinoBoilerplate.helpers do
     action = current_path[1..current_path.length]
     action == '' ? 'accueil' : action
   end
+
+  def dom_id(object)
+    "#{object.class.to_s.downcase}_#{object.id.to_s}"
+  end
 end

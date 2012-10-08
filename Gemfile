@@ -24,6 +24,8 @@ gem 'padrino-assets'
 gem 'uglifier'
 gem 'therubyracer'
 
+gem 'rack-google-analytics'
+
 #gem 'will_paginate'
 
 # Or Padrino Edge
