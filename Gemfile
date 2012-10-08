@@ -21,10 +21,12 @@ gem 'sqlite3'
 gem 'padrino', '0.10.7'
 
 gem 'padrino-assets'
-gem 'uglifier'
-gem 'therubyracer'
 
-gem 'rack-google-analytics'
+group :production do
+  gem 'uglifier'
+  gem 'therubyracer'
+  gem 'rack-google-analytics'
+end
 
 #gem 'will_paginate'
 
