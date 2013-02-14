@@ -55,7 +55,7 @@ class PadrinoBoilerplate < Padrino::Application
     # For padrino assets
     set :css_compressor => CssCompressor.new
     set :js_compressor => Uglifier.new
-    use Rack::GoogleAnalytics, :tracker => 'UA-91172-8'
+    #use Rack::GoogleAnalytics, :tracker => 'UA-91172-8'
   end
 
   def self.email_to
